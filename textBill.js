@@ -9,7 +9,7 @@ const totalCostElem = document.querySelector(".totalOne");
  var smsTotal = 0;
 
 
-  var totalCost = 0
+  var totalCost = 0;
 
   
 function textBillTotal(){
@@ -35,6 +35,7 @@ function textBillTotal(){
    totalCostElem.innerHTML = totalCost.toFixed(2);
     textBillTotalColor(totalCost);
 };
+
 
 function textBillTotalColor(totalCost){
 
