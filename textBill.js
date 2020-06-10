@@ -7,7 +7,7 @@ const totalCostElem = document.querySelector(".totalOne");
 
  var callsTotal = 0;
  var smsTotal = 0;
-
+ var total = 0;
 
   var totalCost = 0
 
@@ -26,6 +26,7 @@ function textBillTotal(){
         smsTotal += 0.75;
 }
 
+<<<<<<< HEAD
 
 
    callsTotalElem.innerHTML = callsTotal.toFixed(2);
@@ -35,6 +36,14 @@ function textBillTotal(){
 
    totalCostElem.innerHTML = totalCost.toFixed(2);
 
+=======
+var total = callsTotal + smsTotal;
+
+   callsTotalElem.innerHTML = callsTotal.toFixed(2);
+   smsTotalElem.innerHTML = smsTotal.toFixed(2);
+   totalCostElem.innerHTML = total.toFixed(2);
+     
+>>>>>>> a236ce08032228cc6114c3561748c615d34e1cac
    
     textBillTotalColor(totalCost);
 };
