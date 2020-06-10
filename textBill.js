@@ -26,7 +26,7 @@ function textBillTotal(){
         smsTotal += 0.75;
 }
 
-var totalCost = callsTotal + smsTotal;
+var total = callsTotal + smsTotal;
 
    callsTotalElem.innerHTML = callsTotal.toFixed(2);
    smsTotalElem.innerHTML = smsTotal.toFixed(2);
