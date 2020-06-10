@@ -32,7 +32,10 @@ function textBillTotal(){
    smsTotalElem.innerHTML = smsTotal.toFixed(2);
    
      totalCost = callsTotal + smsTotal;
+
    totalCostElem.innerHTML = totalCost.toFixed(2);
+
+   
     textBillTotalColor(totalCost);
 };
 
