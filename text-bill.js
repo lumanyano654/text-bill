@@ -66,6 +66,11 @@ function textBill (){
             return "warning"
         }
     }
+
+    
+
+
+
     return {
         textBillTotal,
         getCallCost,
