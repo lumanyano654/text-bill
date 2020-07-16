@@ -2,7 +2,7 @@ function textBill (){
 
     var callsTotal = 0;
     var smsTotal = 0;
-    var total = 0; 
+    var totalCost = 0; 
    
      //var totalCost = 0
    
@@ -27,39 +27,39 @@ function textBill (){
 
     function getCallCost (){
 
-      return callsTotal
+      return callsTotal.toFixed(2)
     
     
     }
 
     function getSmsCost (){
 
-        return smsCost
+        return smsTotal.toFixed(2);
  
     }
    
     function myOverallTotal (){
 
-        return total = callsTotal + smsTotal;
-
+        totalCost = callsTotal + smsTotal
+        return totalCost.toFixed(2);
     }
 
     function criticalLevel (){
 
-        return 15 
+        return 50
     }
 
     function warningLevel (){
 
-        return 10
+        return 30
 
     };
 
 
-    function className(){
+    function totalClassName (){
         if (myOverallTotal() >= criticalLevel()){
 
-            return "critical"
+            return "danger"
         }
         if (myOverallTotal() >= warningLevel()){
 
@@ -76,7 +76,7 @@ function textBill (){
         getCallCost,
         getSmsCost,
         myOverallTotal,
-        className
+        totalClassName
     }
 
 
